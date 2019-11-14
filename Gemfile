@@ -50,3 +50,7 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'rspec-rails'
 end
+
+group :test do
+  gem 'shoulda-matchers'
+end

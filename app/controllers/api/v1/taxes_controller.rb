@@ -1,4 +1,4 @@
-class V1::TaxesController < ApplicationController
+class API::V1::TaxesController < ApplicationController
   def index
     @taxes = Tax.all
 
