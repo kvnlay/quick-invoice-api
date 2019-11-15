@@ -29,9 +29,7 @@ ActiveRecord::Schema.define(version: 2019_11_13_214713) do
     t.string "status"
     t.decimal "amount_paid"
     t.decimal "due_amount"
-    t.string "customer_company_name"
-    t.string "customer_email"
-    t.string "customer_name"
+    t.text "customer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -42,9 +40,7 @@ ActiveRecord::Schema.define(version: 2019_11_13_214713) do
     t.text "description"
     t.integer "quantity"
     t.integer "total"
-    t.integer "tax_rate"
-    t.string "tax_type"
-    t.string "tax_name"
+    t.text "tax"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "invoice_id", null: false

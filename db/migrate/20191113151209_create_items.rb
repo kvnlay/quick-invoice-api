@@ -6,9 +6,10 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.text :description
       t.integer :quantity
       t.integer :total
-      t.integer :tax_rate
-      t.string :tax_type
-      t.string :tax_name
+      t.text :tax
+      # t.integer :tax_rate
+      # t.string :tax_type
+      # t.string :tax_name
       t.timestamps
     end
   end
