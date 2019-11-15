@@ -1,5 +1,7 @@
 class Item < ApplicationRecord
   belongs_to :invoices
-  has_one :tax
-  accepts_nested_attributes_for :tax
+  store :tax, accessors: %i[rate type name], coder: JSON, prefix: true
+  validates :tax_rate, :tax_type, presence: true
+  validates :type,  inclusion: {in: %w[paid unpaid partial],
+                    message: `%<value> is not a valid type`}
 end
