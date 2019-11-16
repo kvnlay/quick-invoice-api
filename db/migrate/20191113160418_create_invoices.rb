@@ -7,9 +7,6 @@ class CreateInvoices < ActiveRecord::Migration[6.0]
       t.decimal :amount_paid
       t.decimal :due_amount
       t.text :customer
-      # t.string :customer_company_name
-      # t.string :customer_email
-      # t.string :customer_name
       t.timestamps
     end
   end
