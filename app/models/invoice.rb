@@ -1,4 +1,5 @@
 class Invoice < ApplicationRecord
+  belongs_to :user
   has_many :items
   accepts_nested_attributes_for :items
   store :customer, accessors: %i[name email company_name], coder: JSON, prefix: true
