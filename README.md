@@ -2,7 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-> JSON API app build using Ruby on Rails
+> JSON API app built using Ruby on Rails
 
 > App generated using [this](https://github.com/rvvergara/rails-templates/tree/master/api_template) custom Rails Template
 
